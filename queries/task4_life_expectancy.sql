@@ -1,3 +1,21 @@
+-- =====================================================
+-- TASK 4: Life Expectancy Gaps by Government Form
+-- =====================================================
+--
+-- BUSINESS QUESTION:
+-- The analytics team is investigating if different forms of government 
+-- are associated with higher life expectancy.
+--
+-- REQUIREMENTS:
+-- - Calculate MIN, MAX, and AVG life expectancy for each GovernmentForm
+-- - Only include government forms that appear in at least 5 countries
+-- - Exclude NULL LifeExpectancy
+-- - Order by average life expectancy from highest to lowest
+--
+-- =====================================================
+-- MY SOLUTION:
+-- =====================================================
+
 SELECT
     governmentform,
     MIN(lifeexpectancy) AS min_life,
