@@ -1,3 +1,22 @@
+-- =====================================================
+-- TASK 6: Independent vs. Non-Independent Country Analysis
+-- =====================================================
+--
+-- BUSINESS QUESTION:
+-- Do countries that gained independence before 1900 have 
+-- significantly different average GNPs compared to those after 1900?
+--
+-- REQUIREMENTS:
+-- - Group into: 'Early Independence' (IndepYear < 1900) 
+--              'Later Independence' (IndepYear >= 1900)
+-- - Calculate average GNP and average SurfaceArea for each group
+-- - Exclude NULL IndepYear and NULL GNP
+-- - Round averages to 2 decimal places
+--
+-- =====================================================
+-- MY SOLUTION:
+-- =====================================================
+
 WITH hl AS (
     SELECT
         name,
