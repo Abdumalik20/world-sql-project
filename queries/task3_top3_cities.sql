@@ -1,3 +1,21 @@
+-- =====================================================
+-- TASK 3: Top N Cities per Continent
+-- =====================================================
+--
+-- BUSINESS QUESTION:
+-- A product launch team needs to know the top 3 most populous 
+-- cities on each continent (based on the country's continent, not city region).
+--
+-- REQUIREMENTS:
+-- - Use window function to rank cities by population within their continent
+-- - Return: Continent, CityName, CountryName, Population
+-- - Only include top 3 cities per continent
+-- - Exclude cities with population less than 1,000,000
+--
+-- =====================================================
+-- MY SOLUTION:
+-- =====================================================
+
 WITH ranking AS (
     SELECT 
         ci.Name AS CityName,
