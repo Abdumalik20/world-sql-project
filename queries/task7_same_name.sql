@@ -1,3 +1,22 @@
+-- =====================================================
+-- TASK 7: Cities with Same Name as Country
+-- =====================================================
+--
+-- BUSINESS QUESTION:
+-- Data quality check required. There might be inconsistencies 
+-- where a city shares its name with its parent country.
+--
+-- REQUIREMENTS:
+-- - Find all instances where city.Name exactly equals country.Name
+-- - Return: city name, country name, city population, country population
+-- - Calculate city population as percentage of country population
+-- - Exclude cases where city is the capital (avoid false positives)
+-- - Order by percentage descending
+--
+-- =====================================================
+-- MY SOLUTION:
+-- =====================================================
+
 SELECT 
     ci.Name AS city_name,
     c.Name AS country_name,
