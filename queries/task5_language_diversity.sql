@@ -1,3 +1,20 @@
+-- =====================================================
+-- TASK 5: Language Diversity Hotspots
+-- =====================================================
+--
+-- BUSINESS QUESTION:
+-- Find countries that speak more than 5 distinct languages, 
+-- as these markets require more localization effort.
+--
+-- REQUIREMENTS:
+-- - Return: CountryCode, Country Name, count of distinct languages, sum of percentages
+-- - Only countries with more than 5 languages
+-- - Order by language count descending
+--
+-- =====================================================
+-- MY SOLUTION:
+-- =====================================================
+
 SELECT 
     cl.CountryCode,
     c.Name AS CountryName,
